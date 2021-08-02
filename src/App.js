@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
 import Main from './Components/Main';
@@ -10,17 +9,29 @@ function App() {
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
 
-  const onAdd = (product) => {
-    const exist = cartItems.find((a) => a.id === product.id);
+  const onAdd = (producttt) => {
+    const exist = cartItems.find((a) => a.id === producttt.id);
+    console.log(exist);
+
     if (exist) {
-      setCartItems(cartItems.map((a) => ( a.id === product.id ? {... exist, qty: exist.qty + 1} : a )))
+      setCartItems(cartItems.map((a) => ( a.id === producttt.id ? {...exist, qty: exist.qty + 1} : a )))
     }
     else {
-      setCartItems([...cartItems, {...product, qty: 1}])
+      setCartItems([...cartItems, {...producttt, qty: 1}])
     }
-  } 
-
-  
+  }
+    const onRemove = (produckt) => {
+      const exist = cartItems.find((a) => (a.id === produckt.id));
+      if (exist.qty === 1){
+        setCartItems(cartItems.filter((a)=> a.id !== produckt.id))
+      }
+      // if (exist.qty === 1){
+      //   setCartItems([{...produckt, qty: 0}]);
+      // }
+      else{
+        setCartItems(cartItems.map((a) => ( a.id === produckt.id ? {...exist, qty: exist.qty - 1} : a )))
+      }
+    }
   
 // setCartItems(4, 7, 8);
   return (
@@ -28,7 +39,7 @@ function App() {
       <Header></Header>
       <div className="row">
         <Main products={products} onAdd={onAdd}></Main>
-        <Cart cartItems={cartItems} onAdd={onAdd}></Cart>
+        <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}></Cart>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function Cart(props) {
-const { cartItems, onAdd } = props;
+const { cartItems, onAdd, onRemove } = props;
 console.log(cartItems);
 
 
@@ -17,7 +17,7 @@ console.log(cartItems);
                        <div key={item.id} className="row">
                             <div className="col-2">{item.name}</div>
                             <div className="col-2">
-                                <button>-</button>
+                                <button onClick={()=> onRemove(item)}>-</button>
                                 <button onClick={()=> onAdd(item)}>+</button>
                             </div>
                             <div className="col-2">{item.qty} x ${item.price} </div>
