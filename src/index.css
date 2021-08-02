@@ -40,8 +40,31 @@ header div a{
 .txt-right{
   text-align: right;
 }
-
-
+.btn{
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 4px;
+  background: yellow;
+  padding: 5px 0;
+}
+.btn-add{
+  /* width: 70%; */
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 2px;
+  background: rgb(0, 191, 255);
+  font-size: medium;
+  /* padding: 2px 0; */
+}
+.btn-remove{
+  /* width: 70%; */
+  border: 2px solid #fff;
+  font-size: medium;
+  border-radius: 5px;
+  margin: 2px;
+  background: red;
+  padding: 1px 7px;
+}
 
 
 

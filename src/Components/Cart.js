@@ -22,8 +22,8 @@ const totalPrice = itemsPrice + shippingPrice + taxPrice;
                        <div key={item.id} className="row">
                             <div className="col-2">{item.name}</div>
                             <div className="col-2">
-                                <button onClick={()=> onRemove(item)}>-</button>
-                                <button onClick={()=> onAdd(item)}>+</button>
+                                <button className="btn-remove" onClick={()=> onRemove(item)}>-</button>
+                                <button className="btn-add" onClick={()=> onAdd(item)}>+</button>
                             </div>
                             <div className="col-2 txt-right">{item.qty} x #{item.price.toFixed(2)} </div>
                        </div>
@@ -50,7 +50,7 @@ const totalPrice = itemsPrice + shippingPrice + taxPrice;
                             <div>#{totalPrice.toFixed(2)}</div>
                         </div>
                         <hr></hr>
-                        <button onClick={()=> alert("You've successfully completed your Order")}>Checkout</button>
+                        <button className="btn" onClick={()=> alert("You've successfully completed your Order")}>Checkout</button>
                    </div>
                }
             </div>

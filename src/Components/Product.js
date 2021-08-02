@@ -8,7 +8,7 @@ const Product = (props) => {
             <img className="img-box"></img>
             <h3>{product.name}</h3>
             <div>#{product.price.toFixed(2)}</div>
-            <button onClick={()=> onAdd(product)}>Add to Cart</button>
+            <button className="btn" onClick={()=> onAdd(product)}>Add to Cart</button>
         </div>
     )
 }
