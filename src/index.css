@@ -37,8 +37,9 @@ header div a{
   height: 120px;
   background: #fff;
 }
-
-
+.txt-right{
+  text-align: right;
+}
 
 
 

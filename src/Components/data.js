@@ -3,19 +3,19 @@ const data = {
         {
             id: 1,
             name: 'Aloe-Velvet Cakes',
-            price: 400,
+            price: 5400,
             img: "",
         },
         {
             id: 2,
             name: 'Baked-Creamy Cakes',
-            price: 750,
+            price: 7500,
             img: "",
         },
         {
             id: 3,
             name: 'Crispy-vanilla Cakes',
-            price: 500,
+            price: 1500,
             img: "",
         },
         // {

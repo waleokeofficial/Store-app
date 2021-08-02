@@ -7,7 +7,7 @@ const Product = (props) => {
         <div className="col-1">
             <img className="img-box"></img>
             <h3>{product.name}</h3>
-            <div>${product.price}</div>
+            <div>#{product.price.toFixed(2)}</div>
             <button onClick={()=> onAdd(product)}>Add to Cart</button>
         </div>
     )
