@@ -49,6 +49,8 @@ const totalPrice = itemsPrice + shippingPrice + taxPrice;
                             <div>Total Price</div>
                             <div>#{totalPrice.toFixed(2)}</div>
                         </div>
+                        <hr></hr>
+                        <button onClick={()=> alert("You've successfully completed your Order")}>Checkout</button>
                    </div>
                }
             </div>
