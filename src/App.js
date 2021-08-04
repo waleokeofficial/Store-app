@@ -4,6 +4,7 @@ import Main from './Components/Main';
 import Cart from './Components/Cart';
 import data from './Components/data'
 import { useState } from 'react';
+import Signin from './Components/SignIn';
 
 function App() {
   const { products } = data;
@@ -42,6 +43,7 @@ function App() {
         <Main products={products} onAdd={onAdd}></Main>
         <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}></Cart>
       </div>
+      <Signin></Signin>
     </div>
   );
 }
