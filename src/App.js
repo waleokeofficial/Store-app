@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import HomePage from './HomePage';
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 
 
 function App() {
@@ -9,10 +9,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <HomePage></HomePage>
-
-
-        
+        <HomePage></HomePage>      
       </Router>
     </div>
   );

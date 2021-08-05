@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Signin from './SignIn';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import About from './About';
+import Dashboard from './Dashboard';
 
 function Homebody() {
   const { products } = data;
@@ -43,10 +44,6 @@ function Homebody() {
             <Main products={products} onAdd={onAdd}></Main>
             <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}></Cart>
         </div>
-            <Switch>
-              <Route path="/signin" exact component={Signin}></Route>
-              <Route path="/about" exact component={About}></Route>
-            </Switch>
     </div>
   );
 }

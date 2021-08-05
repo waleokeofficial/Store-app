@@ -7,22 +7,13 @@ const Header = () => {
     return(
         <div>
             <header className="header row block">
-                {/* <Router> */}
-                    <h2>Radiant Store</h2>
-                    <div>
-                        <span>Home</span>
-
-                        <Link to="/about" className="LINK">
-                            About
-                        </Link>
-
-                        <span>Cart</span>
-
-                        <Link to="/signin"  className="LINK">
-                            Sign In
-                        </Link>
-                    </div>
-                {/* </Router> */}
+                <Link to="/" className="LINK"><h2><span>Radiant Store</span></h2></Link>
+                <nav>
+                    <Link to="/dashboard" className="LINK"><li><span> Dashboard </span></li></Link>
+                    <Link to="/about" className="LINK"><li><span> About </span></li></Link>
+                    <Link to="/cart" className="LINK"><li><span> Cart </span></li></Link>
+                    <Link to="/signin" ><li><span> Sign In </span></li></Link>
+                </nav>
             </header>
         </div>
     )
