@@ -1,14 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
 
 const Header = () => {
 
     return(
         <div>
             <header className="header row block">
-                <h2>Radiant Store</h2>
-                <div>
-                    <a>Cart</a><a onClick={()=> alert("Sign In")}>Sign In</a>
-                </div>
+                {/* <Router> */}
+                    <h2>Radiant Store</h2>
+                    <div>
+                        <span>Home</span>
+
+                        <Link to="/about" className="LINK">
+                            About
+                        </Link>
+
+                        <span>Cart</span>
+
+                        <Link to="/signin"  className="LINK">
+                            Sign In
+                        </Link>
+                    </div>
+                {/* </Router> */}
             </header>
         </div>
     )

@@ -1,9 +1,10 @@
 body{
   margin: 0;
   font-family: sans-serif;
-  color: white;
+  
 }
 .block{
+  color: white;
   background-color: rebeccapurple;
   padding: 15px;
   margin: 8px;
@@ -68,9 +69,42 @@ header div a{
 
 
 
-
-
-
+.header div span{
+  margin:  0 10px;
+}
+.LINK{
+  text-decoration: none;
+  color: #fff;
+}
+.Formik{
+  padding: 18px;
+}
+h2{
+  margin-bottom: 20px;
+}
+.InputField{
+  /* padding: 2px; */
+}
+.InputField label{
+  display: block;
+  margin-left: 0;
+}
+.InputField input{
+  width: 100%;
+}
+.InputField input{
+  padding: 4px;
+  margin: 0;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.InputField button{
+  width: 100%;
+  border-style: none;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 4px;
+}
 
 
 
