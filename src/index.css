@@ -77,11 +77,17 @@ header h2{
   background: red;
   padding: 1px 7px;
 }
-
+.badge{
+  background: rgb(197, 9, 9);
+  border-radius: 4px;
+  padding: 6px;
+  margin: 0;
+  font-size: 12px;
+}
 
 
 .header span{
-  margin:  0 10px;
+  margin:  0 5px;
   text-decoration: none;
   color: #fff;
 }

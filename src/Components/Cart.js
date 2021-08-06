@@ -12,6 +12,7 @@ const totalPrice = itemsPrice + shippingPrice + taxPrice;
 
 
 
+    
     return(
         <div className="col-1 block">
             Cart
@@ -29,6 +30,7 @@ const totalPrice = itemsPrice + shippingPrice + taxPrice;
                        </div>
                    ))
                }
+               
                {
                    cartItems.length === 0 ? "":
                    <div className="">
