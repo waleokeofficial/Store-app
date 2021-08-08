@@ -16,7 +16,7 @@ function HomePage() {
 
   const onAdd = (producttt) => {
     const exist = cartItems.find((a) => a.id === producttt.id);
-    console.log(exist);
+    // console.log(exist);
 
     if (exist) {
       setCartItems(cartItems.map((a) => ( a.id === producttt.id ? {...exist, qty: exist.qty + 1} : a )))
@@ -39,7 +39,6 @@ function HomePage() {
     }
  
 
-
   return (
     <div className="HomePage">
         <Header cartItems={cartItems}></Header>
@@ -47,7 +46,7 @@ function HomePage() {
         
         <Switch>
           <Route path="/" exact component={LandingPage}></Route>
-          <Route path="/Dashboard"><Homebody products={ products } cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}></Homebody></Route>
+          <Route path="/dashboard"><Homebody products={ products } cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}></Homebody></Route>
           <Route path="/signin" exact component={Signin}></Route>
           <Route path="/about" exact component={About}></Route>
         </Switch>
