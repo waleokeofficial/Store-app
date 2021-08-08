@@ -11,13 +11,14 @@ function App() {
 
   return (
     <div className="App">
-      {user.name == "" ? <AccessApp user={user} setUser={setUser}></AccessApp> : <div><h2>Welcome, {user.name}</h2><div>We've missed you!!!</div><br></br><button onClick={()=> setShowStore(true)}>Proceed to Shopping</button></div>}
+      {/* {user.name == "" ? <AccessApp user={user} setUser={setUser}></AccessApp> : <div><h2>Welcome, {user.name}</h2><div>We've missed you!!!</div><br></br><button onClick={()=> setShowStore(true)}>Proceed to Shopping</button></div>} */}
+      {user.name == "" ? <AccessApp user={user} setUser={setUser}></AccessApp> : <HomePage></HomePage>}
       
 
-      <Route>
+      {/* <Route>
         {showStore ? <HomePage></HomePage> : ""}
                  
-      </Route>
+      </Route> */}
     </div>
   );
 }
